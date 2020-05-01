@@ -102,12 +102,14 @@ class QCodesCatalog(Catalog):
         for row in _get_runs(self.conn):
 
             run_description = json.loads(row['run_description'])
+
+            # move these functions so they can be loaded elsewhere
             exp_name, sample_name = _get_names_from_experiment_id(self.conn, row['exp_id'])
             dependent_parameters, independent_parameters = _parameters_from_description(run_description)
 
             self._entries[row['guid']] = LocalCatalogEntry(
                 name=row['guid'],
-                description=run_description,
+                description='run {} at {}'.format(row['guid'], str(self._db_path)),
                 driver=self._source_driver,
                 direct_access='forbid',
                 args={
