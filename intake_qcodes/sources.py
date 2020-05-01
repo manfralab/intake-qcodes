@@ -6,9 +6,10 @@ from qcodes.dataset.data_set import DataSet
 from qcodes.dataset.sqlite.queries import get_runid_from_guid, get_guid_from_run_id, get_run_description
 from qcodes.dataset.sqlite.query_helpers import select_one_where
 from qcodes.dataset.descriptions.versioning.serialization import to_dict_for_storage
-from intake_qcodes.datasets import get_parameter_data, datadict_to_dataframe
+from intake_qcodes.datasets import get_parameter_data, datadict_to_dataframe, parameters_from_description
 
 class QCodesBase(DataSource):
+    # add sample name and experiment name properties
 
     version = '0.0.1'
     partition_access = True
@@ -24,13 +25,14 @@ class QCodesBase(DataSource):
         self._run_description = {}
         self._table_name = ''
         self._length = None
+        self._snapshot = {}
 
         super().__init__(metadata=metadata)
 
     def _read_data(self, columns=()):
 
         if not columns:
-            columns = self.metadata['dependent_parameters']
+            columns, _ = parameters_from_description(self.run_description)
 
         in_memory = tuple(self._datadict.keys())
         to_read = list(set(columns).difference(in_memory))
@@ -53,39 +55,39 @@ class QCodesBase(DataSource):
         should take a roughly constant amount of time regardless of contents of dataset
         """
 
-        # use the dataset to access remaining schema information
-        self._qcodes_dataset = DataSet(run_id=self.run_id, conn=self.conn)
-        self._length = self._qcodes_dataset.number_of_results
+        dep_params, indep_params = parameters_from_description(self.run_description)
 
         return Schema(
             datashape=None,
             dtype=None,
-            shape=(dataset_length,), # not sure what else to do here
-            npartitions=n_dependent_params,
+            shape=(self.dataset.number_of_results,), # not sure what else to do here
+            npartitions= len(dep_params),
             extra_metadata={
-                'run_description': self.run_description,
-                'run_table_name': self.run_table_name,
-                'dataset_metadata': self._qcodes_dataset.metadata,
-                'number_of_records': self._length,
-                'snapshot': self._qcodes_dataset.snapshot
+                'dataset_metadata': self.dataset.metadata,
             }
         )
-
 
     def to_dask(self):
         """Return a dask container for this data source"""
         raise NotImplementedError
 
-    def canonical(self):
-        """ return qcodes.DataSet """
-        self._load_metadata() # loads schema/dataset and metadata
-        return self._qcodes_dataset
-
     @property
     def conn(self):
+        """ database connection """
         if not self._connection:
             self._connection = connect(self._db_path)
         return self._connection
+
+    @property
+    def dataset(self):
+        """ qcodes.DataSet """
+        if not self._qcodes_dataset:
+            self._qcodes_dataset = DataSet(run_id=self.run_id, conn=self.conn)
+        return self._qcodes_dataset
+
+    def canonical(self):
+        """ return qcodes.DataSet """
+        return self.dataset
 
     @property
     def guid(self):
@@ -100,34 +102,26 @@ class QCodesBase(DataSource):
         return self._run_id
 
     @property
-    def dataset(self):
-        self._load_metadata() # loads schema/dataset and metadata
-        return self._qcodes_dataset
-
-    @property
     def snapshot(self):
-        self._load_metadata() # loads schema/dataset and metadata
-        return self.metadata['snapshot']
+        if not self._snapshot:
+            self._snapshot = self.dataset.snapshot
+        return self._snapshot
 
     @property
     def run_description(self):
         if not self._run_description:
-            if self._qcodes_dataset:
-                rd = self._qcodes_dataset.description
-                self._run_description = to_dict_for_storage(rd)
-            else:
-                self._run_description = json.loads(get_run_description(self.conn, self.run_id))
+            rd = self.dataset.description
+            self._run_description = to_dict_for_storage(rd)
         return self._run_description
 
     @property
     def run_table_name(self):
         if not self._table_name:
-            if self._qcodes_dataset:
-                self._table_name = self._qcodes_dataset.table_name
-            else:
-                select_one_where(self.conn, "runs",
-                                "result_table_name", "run_id", self.run_id)
-                pass
+            self._table_name = self.dataset.table_name
+        return self._table_name
+
+    def __len__(self):
+        return self.dataset.number_of_results
 
 
 class QCodesDataFrame(QCodesBase):
@@ -151,18 +145,12 @@ class QCodesDataFrame(QCodesBase):
         self._dataframe = None
         super().__init__(**self._init_args)
 
-    def _get_partition(self, idx):
+    def _get_partition(self, param):
         """Subclasses should return a container object for this partition
-        This function will never be called with an out-of-range value for i.
+        This function will never be called with an out-of-range value.
         """
-        if isinstance(idx, int):
-            param = self.metadata['dependent_parameters'][0]
-        elif isinstance(idx, str):
-            param = idx
-        else:
-            raise ValueError('Partition index should be an integer or parameter name')
-
-        return self._read_data(columns=[param])
+        datadict = self._read_data(columns=[param])
+        return datadict_to_dataframe(datadict)
 
     def read(self):
         """Load entire dataset into a container and return it"""
@@ -171,17 +159,22 @@ class QCodesDataFrame(QCodesBase):
 
     def read_chunked(self):
         """Return iterator over container fragments of data source"""
-        npartitions = len(self.metadata['dependent_parameters'])
-        for i in range(npartitions):
+        dep_params, _ = parameters_from_description(self.run_description)
+        for i in range(len(dep_params)):
             yield self._get_partition(i)
 
-    def read_partition(self, i):
+    def read_partition(self, idx):
         """Return a part of the data corresponding to i-th partition.
         By default, assumes i should be an integer between zero and npartitions;
         override for more complex indexing schemes.
         """
-        npartitions = len(self.metadata['dependent_parameters'])
-        if i < 0 or i >= npartitions:
-            raise IndexError('%d is out of range' % i)
+        dep_params, _ = parameters_from_description(self.run_description)
 
-        return self._get_partition(i)
+        if isinstance(idx, str):
+            param = idx
+        elif isinstance(idx, int):
+            param = dep_params[idx]
+        else:
+            raise ValueError('Partition index should be an integer or parameter name')
+
+        return self._get_partition(param)

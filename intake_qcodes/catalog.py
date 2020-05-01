@@ -3,54 +3,10 @@ from pathlib import Path
 from intake.catalog import Catalog
 from intake.catalog.local import LocalCatalogEntry
 from qcodes.dataset.sqlite.database import connect
-from qcodes.dataset.sqlite.query_helpers import select_many_where
-from qcodes.dataset.sqlite.connection import ConnectionPlus, transaction, atomic
+from qcodes.dataset.sqlite.connection import ConnectionPlus
 from qcodes.dataset.guids import validate_guid_format
-
 from intake_qcodes.sources import QCodesDataFrame
-
-
-def _get_runs(conn):
-    """ Get a list of runs.
-    Args:
-        conn:   database connection
-        exp_id: id of the experiment to look inside.
-                if None all experiments will be included
-    Returns:
-        list of rows
-    """
-
-    table_columns = [
-        "run_id", "guid", "exp_id", "run_description", "run_timestamp", "completed_timestamp", "result_table_name",
-    ]
-
-    table_columns_str = ', '.join(table_columns)
-
-    with atomic(conn) as conn:
-        sql = f"SELECT {table_columns_str} FROM runs"
-        c = transaction(conn, sql)
-
-    return c.fetchall()
-
-
-def _get_names_from_experiment_id(conn, exp_id):
-
-    return select_many_where(
-        conn, "experiments", "name", "sample_name",
-        where_column="exp_id", where_value=exp_id
-    )
-
-
-def _parameters_from_description(desc):
-
-    dependent_parameters = []
-    independent_parameters = []
-    for param_spec in desc['interdependencies']['paramspecs']:
-        if param_spec['depends_on']:
-            dependent_parameters.append(param_spec['name'])
-        else:
-            independent_parameters.append(param_spec['name'])
-    return dependent_parameters, independent_parameters
+from intake_qcodes.datasets import get_runs, get_names_from_experiment_id, parameters_from_description
 
 
 known_types = {
@@ -99,13 +55,13 @@ class QCodesCatalog(Catalog):
 
         exps = set()
         samples = set()
-        for row in _get_runs(self.conn):
+        for row in get_runs(self.conn):
 
             run_description = json.loads(row['run_description'])
 
             # move these functions so they can be loaded elsewhere
-            exp_name, sample_name = _get_names_from_experiment_id(self.conn, row['exp_id'])
-            dependent_parameters, independent_parameters = _parameters_from_description(run_description)
+            exp_name, sample_name = get_names_from_experiment_id(self.conn, row['exp_id'])
+            dependent_parameters, independent_parameters = parameters_from_description(run_description)
 
             self._entries[row['guid']] = LocalCatalogEntry(
                 name=row['guid'],
