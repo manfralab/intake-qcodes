@@ -3,7 +3,8 @@ from warnings import warn
 import numpy as np
 import pandas as pd
 from pandas import DataFrame
-from xarray import Dataset
+import xarray as xr
+from xarray import DataArray, Dataset
 from qcodes.dataset.data_set import DataSet
 from qcodes.dataset.sqlite.connection import ConnectionPlus, transaction, atomic
 from qcodes.dataset.sqlite.query_helpers import select_many_where
@@ -195,7 +196,18 @@ def datadict_to_xarray(datadict: dict) -> Dataset:
     """
     convert dictionary of numpy arrays to xarray
     """
-    pass
+
+    data_arrays = []
+    for param, sub_dict in datadict.items():
+        x = DataArray(
+            data=sub_dict[param],
+            name=param,
+            coords=[vals for key, vals in sub_dict.items() if key!=param],
+            dims=[key for key in sub_dict if key!=param]
+        )
+        data_arrays.append(x)
+
+    return xr.merge(data_arrays)
 
 
 def dataframe_to_xarray(df: DataFrame) -> Dataset:

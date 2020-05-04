@@ -5,13 +5,13 @@ from intake.catalog.local import LocalCatalogEntry
 from qcodes.dataset.sqlite.database import connect
 from qcodes.dataset.sqlite.connection import ConnectionPlus
 from qcodes.dataset.guids import validate_guid_format
-from intake_qcodes.sources import QCodesDataFrame
 from intake_qcodes.datasets import get_runs, get_names_from_experiment_id, parameters_from_description
+from intake_qcodes.plots import make_default_plots
 
 
 known_types = {
     'dataframe': 'intake_qcodes.sources.QCodesDataFrame',
-    'xarray': 'intake_qcodes.sources.Qcodes.XArray'
+    'xarray': 'intake_qcodes.sources.QCodesXArray'
 }
 
 
@@ -82,6 +82,7 @@ class QCodesCatalog(Catalog):
                     "experiment_name": exp_name,
                     "sample_name": sample_name,
                     "table_name": row['result_table_name'],
+                    'plots': make_default_plots(run_description),
                 },
                 catalog_dir=str(self._db_path),
                 getenv=False,
@@ -178,16 +179,10 @@ class QCodesCatalog(Catalog):
         return yaml.dump(output)
 
     def guid_from_run_id(self, run_id):
-        if self._guid_lookup:
-            return self._guid_lookup[run_id]
-
-        raise ValueError('Catalog not initilized. No run information loaded')
+        return self._guid_lookup[run_id]
 
     def run_id_from_guid(self, guid):
-        if self._run_id_lookup:
-            return self._run_id_lookup[guid]
-
-        raise ValueError('Catalog not initilized. No run information loaded')
+        return self._run_id_lookup[guid]
 
     @property
     def run_ids(self):

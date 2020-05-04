@@ -6,7 +6,8 @@ from qcodes.dataset.data_set import DataSet
 from qcodes.dataset.sqlite.queries import get_runid_from_guid, get_guid_from_run_id, get_run_description
 from qcodes.dataset.sqlite.query_helpers import select_one_where
 from qcodes.dataset.descriptions.versioning.serialization import to_dict_for_storage
-from intake_qcodes.datasets import get_parameter_data, datadict_to_dataframe, parameters_from_description
+from intake_qcodes.datasets import get_parameter_data, datadict_to_dataframe, parameters_from_description, datadict_to_xarray
+from intake_qcodes.plots import make_default_plots
 
 class QCodesBase(DataSource):
     # add sample name and experiment name properties
@@ -31,6 +32,9 @@ class QCodesBase(DataSource):
         self._snapshot = {}
 
         super().__init__(metadata=metadata)
+
+        if 'plots' not in self.metadata:
+            self.metadata['plots'] = make_default_plots(self.run_description)
 
     def _read_data(self, columns=()):
 
@@ -73,10 +77,6 @@ class QCodesBase(DataSource):
 
     def __len__(self):
         return self._dataset.number_of_results
-
-    def to_dask(self):
-        """Return a dask container for this data source"""
-        raise NotImplementedError
 
     @property
     def _conn(self):
@@ -139,7 +139,6 @@ class QCodesBase(DataSource):
             self._experiment = self._dataset.exp_name
         return self._experiment
 
-
 class QCodesDataFrame(QCodesBase):
     # should still be useful if not called from catalog
 
@@ -191,3 +190,63 @@ class QCodesDataFrame(QCodesBase):
             raise ValueError('Partition index should be an integer or parameter name')
 
         return self._get_partition(param)
+
+    def to_dask(self):
+        """Return a dask container for this data source"""
+        raise NotImplementedError
+
+class QCodesXArray(QCodesBase):
+    # should still be useful if not called from catalog
+
+    name = 'qcodes_xarray'
+    container = 'xarray'
+
+    def __init__(self, db_path, guid=None, run_id=None, metadata=None):
+
+        self._init_args = {
+            'db_path': db_path,
+            'guid': guid,
+            'run_id': run_id,
+            'metadata': metadata,
+        }
+
+        self._dataframe = None
+        super().__init__(**self._init_args)
+
+    def _get_partition(self, param):
+        """Subclasses should return a container object for this partition
+        This function will never be called with an out-of-range value.
+        """
+        datadict = self._read_data(columns=[param])
+        return datadict_to_xarray(datadict)
+
+    def read(self):
+        """Load entire dataset into a container and return it"""
+        datadict = self._read_data()
+        return datadict_to_xarray(datadict)
+
+    def read_chunked(self):
+        """Return iterator over container fragments of data source"""
+        dep_params, _ = parameters_from_description(self.run_description)
+        for i in range(len(dep_params)):
+            yield self._get_partition(i)
+
+    def read_partition(self, idx):
+        """Return a part of the data corresponding to i-th partition.
+        By default, assumes i should be an integer between zero and npartitions;
+        override for more complex indexing schemes.
+        """
+        dep_params, _ = parameters_from_description(self.run_description)
+
+        if isinstance(idx, str):
+            param = idx
+        elif isinstance(idx, int):
+            param = dep_params[idx]
+        else:
+            raise ValueError('Partition index should be an integer or parameter name')
+
+        return self._get_partition(param)
+
+    def to_dask(self):
+        """Return a dask container for this data source"""
+        raise NotImplementedError
