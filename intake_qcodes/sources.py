@@ -19,6 +19,9 @@ class QCodesBase(DataSource):
         self._db_path = Path(db_path).absolute()
         self._guid = guid
         self._run_id = run_id
+        self._experiment_id = None
+        self._sample = ''
+        self._experiment = ''
         self._connection = None
         self._qcodes_dataset = None
         self._datadict = {}
@@ -38,8 +41,8 @@ class QCodesBase(DataSource):
         to_read = list(set(columns).difference(in_memory))
 
         data = get_parameter_data(
-            self.conn,
-            self.run_table_name,
+            self._conn,
+            self._run_table_name,
             self.run_description,
             columns = to_read,
         )
@@ -55,80 +58,90 @@ class QCodesBase(DataSource):
         should take a roughly constant amount of time regardless of contents of dataset
         """
 
+        self._qcodes_dataset = DataSet(run_id=self.run_id, conn=self._conn)
         dep_params, indep_params = parameters_from_description(self.run_description)
 
         return Schema(
             datashape=None,
             dtype=None,
-            shape=(self.dataset.number_of_results,), # not sure what else to do here
+            shape=(self._dataset.number_of_results,), # not sure what else to do here
             npartitions= len(dep_params),
             extra_metadata={
-                'dataset_metadata': self.dataset.metadata,
+                'dataset_metadata': self._dataset.metadata,
             }
         )
+
+    def __len__(self):
+        return self._dataset.number_of_results
 
     def to_dask(self):
         """Return a dask container for this data source"""
         raise NotImplementedError
 
     @property
-    def conn(self):
+    def _conn(self):
         """ database connection """
         if not self._connection:
             self._connection = connect(self._db_path)
         return self._connection
 
     @property
-    def dataset(self):
+    def _dataset(self):
         """ qcodes.DataSet """
         if not self._qcodes_dataset:
-            self._qcodes_dataset = DataSet(run_id=self.run_id, conn=self.conn)
+            self._qcodes_dataset = DataSet(run_id=self.run_id, conn=self._conn)
         return self._qcodes_dataset
+
+    @property
+    def _run_table_name(self):
+        if not self._table_name:
+            self._table_name = self._dataset.table_name
+        return self._table_name
 
     def canonical(self):
         """ return qcodes.DataSet """
-        return self.dataset
+        return self._dataset
 
     @property
     def guid(self):
         if not self._guid:
-            self._guid = get_guid_from_run_id(self.conn, self._run_id)
+            self._guid = get_guid_from_run_id(self._conn, self._run_id)
         return self._guid
 
     @property
     def run_id(self):
         if not self._run_id:
-            self._run_id = get_runid_from_guid(self.conn, self._guid)
+            self._run_id = get_runid_from_guid(self._conn, self._guid)
         return self._run_id
 
     @property
     def snapshot(self):
         if not self._snapshot:
-            self._snapshot = self.dataset.snapshot
+            self._snapshot = self._dataset.snapshot
         return self._snapshot
 
     @property
     def run_description(self):
         if not self._run_description:
-            rd = self.dataset.description
+            rd = self._dataset.description
             self._run_description = to_dict_for_storage(rd)
         return self._run_description
 
     @property
-    def run_table_name(self):
-        if not self._table_name:
-            self._table_name = self.dataset.table_name
-        return self._table_name
+    def sample(self):
+        if not self._sample:
+            self._sample = self._dataset.sample_name
+        return self._sample
 
-    def __len__(self):
-        return self.dataset.number_of_results
+    @property
+    def experiment(self):
+        if not self._experiment:
+            self._experiment = self._dataset.exp_name
+        return self._experiment
 
 
 class QCodesDataFrame(QCodesBase):
     # should still be useful if not called from catalog
-    # don't rely on metadata keys
-    # make guid and run_id kwargs where one is required
-    # things grabbed from meta that are used fo schema/loading should be args/kwargs to __init__
 
     name = 'qcodes_dataframe'
     container = 'dataframe'

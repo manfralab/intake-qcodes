@@ -5,15 +5,11 @@ sources:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175730b4a
-    cache: null
-    catalog: &id001 !!python/object:intake_qcodes.catalog.QCodesCatalog
-      args:
-      - ../data/qcodes_data.db
-      cls: intake_qcodes.catalog.QCodesCatalog
-      kwargs: {}
+      run_id: 1
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175730b4a at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 1 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175730b4a
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -29,17 +25,17 @@ sources:
       start_time: 1586813406.0374491
       stop_time: 1586813431.6059072
       table_name: results-1-1
-    name: aaaaaaaa-0300-0004-0000-017175730b4a
-    parameters: []
+    name: run 1
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171757424c8:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171757424c8
-    cache: null
-    catalog: *id001
+      run_id: 2
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171757424c8 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 2 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171757424c8
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -55,17 +51,17 @@ sources:
       start_time: 1586813478.1020298
       stop_time: 1586813521.2384543
       table_name: results-1-2
-    name: aaaaaaaa-0300-0004-0000-0171757424c8
-    parameters: []
+    name: run 2
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717574cdbc:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717574cdbc
-    cache: null
-    catalog: *id001
+      run_id: 3
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717574cdbc at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 3 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717574cdbc
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -81,17 +77,17 @@ sources:
       start_time: 1586813521.3470223
       stop_time: 1586813564.9343238
       table_name: results-1-3
-    name: aaaaaaaa-0300-0004-0000-01717574cdbc
-    parameters: []
+    name: run 3
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717575a85a:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717575a85a
-    cache: null
-    catalog: *id001
+      run_id: 4
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717575a85a at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 4 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717575a85a
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -107,17 +103,17 @@ sources:
       start_time: 1586813577.316053
       stop_time: 1586813620.8473048
       table_name: results-1-4
-    name: aaaaaaaa-0300-0004-0000-01717575a85a
-    parameters: []
+    name: run 4
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717576acb0:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717576acb0
-    cache: null
-    catalog: *id001
+      run_id: 5
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717576acb0 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 5 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717576acb0
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -133,17 +129,17 @@ sources:
       start_time: 1586813643.9634647
       stop_time: 1586813686.8005512
       table_name: results-1-5
-    name: aaaaaaaa-0300-0004-0000-01717576acb0
-    parameters: []
+    name: run 5
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175790f12:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175790f12
-    cache: null
-    catalog: *id001
+      run_id: 6
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175790f12 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 6 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175790f12
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -159,17 +155,17 @@ sources:
       start_time: 1586813800.2243075
       stop_time: 1586813842.6321988
       table_name: results-1-6
-    name: aaaaaaaa-0300-0004-0000-017175790f12
-    parameters: []
+    name: run 6
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171757b265b:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171757b265b
-    cache: null
-    catalog: *id001
+      run_id: 7
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171757b265b at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 7 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171757b265b
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -185,17 +181,17 @@ sources:
       start_time: 1586813937.2531722
       stop_time: 1586813980.031271
       table_name: results-1-7
-    name: aaaaaaaa-0300-0004-0000-0171757b265b
-    parameters: []
+    name: run 7
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171757d9cc2:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171757d9cc2
-    cache: null
-    catalog: *id001
+      run_id: 8
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171757d9cc2 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 8 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171757d9cc2
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -211,17 +207,17 @@ sources:
       start_time: 1586814098.6402075
       stop_time: 1586814109.4706986
       table_name: results-1-8
-    name: aaaaaaaa-0300-0004-0000-0171757d9cc2
-    parameters: []
+    name: run 8
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175812ed9:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175812ed9
-    cache: null
-    catalog: *id001
+      run_id: 9
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175812ed9 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 9 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175812ed9
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -237,17 +233,17 @@ sources:
       start_time: 1586814332.6435957
       stop_time: 1586814343.3676116
       table_name: results-1-9
-    name: aaaaaaaa-0300-0004-0000-017175812ed9
-    parameters: []
+    name: run 9
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717581e3bc:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717581e3bc
-    cache: null
-    catalog: *id001
+      run_id: 10
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717581e3bc at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 10 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717581e3bc
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -263,17 +259,17 @@ sources:
       start_time: 1586814378.9498806
       stop_time: 1586814390.702478
       table_name: results-1-10
-    name: aaaaaaaa-0300-0004-0000-01717581e3bc
-    parameters: []
+    name: run 10
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175822a21:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175822a21
-    cache: null
-    catalog: *id001
+      run_id: 11
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175822a21 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 11 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175822a21
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -289,17 +285,17 @@ sources:
       start_time: 1586814396.9715056
       stop_time: 1586814408.078142
       table_name: results-1-11
-    name: aaaaaaaa-0300-0004-0000-017175822a21
-    parameters: []
+    name: run 11
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175828610:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175828610
-    cache: null
-    catalog: *id001
+      run_id: 12
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175828610 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 12 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175828610
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -315,17 +311,17 @@ sources:
       start_time: 1586814420.5069873
       stop_time: 1586814431.246914
       table_name: results-1-12
-    name: aaaaaaaa-0300-0004-0000-017175828610
-    parameters: []
+    name: run 12
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717582dddb:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717582dddb
-    cache: null
-    catalog: *id001
+      run_id: 13
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717582dddb at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 13 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717582dddb
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -341,17 +337,17 @@ sources:
       start_time: 1586814442.9809687
       stop_time: 1586814448.4608011
       table_name: results-1-13
-    name: aaaaaaaa-0300-0004-0000-01717582dddb
-    parameters: []
+    name: run 13
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175831776:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175831776
-    cache: null
-    catalog: *id001
+      run_id: 14
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175831776 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 14 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175831776
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -367,17 +363,17 @@ sources:
       start_time: 1586814457.7298758
       stop_time: 1586814468.6045322
       table_name: results-1-14
-    name: aaaaaaaa-0300-0004-0000-017175831776
-    parameters: []
+    name: run 14
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717583bce3:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717583bce3
-    cache: null
-    catalog: *id001
+      run_id: 15
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717583bce3 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 15 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717583bce3
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -393,17 +389,17 @@ sources:
       start_time: 1586814500.0786371
       stop_time: 1586814510.931285
       table_name: results-1-15
-    name: aaaaaaaa-0300-0004-0000-01717583bce3
-    parameters: []
+    name: run 15
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175846b91:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175846b91
-    cache: null
-    catalog: *id001
+      run_id: 16
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175846b91 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 16 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175846b91
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -419,17 +415,17 @@ sources:
       start_time: 1586814544.7962859
       stop_time: 1586814556.5967805
       table_name: results-1-16
-    name: aaaaaaaa-0300-0004-0000-017175846b91
-    parameters: []
+    name: run 16
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717584b306:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717584b306
-    cache: null
-    catalog: *id001
+      run_id: 17
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717584b306 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 17 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717584b306
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -445,17 +441,17 @@ sources:
       start_time: 1586814563.088422
       stop_time: 1586814574.0095236
       table_name: results-1-17
-    name: aaaaaaaa-0300-0004-0000-01717584b306
-    parameters: []
+    name: run 17
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717585707b:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717585707b
-    cache: null
-    catalog: *id001
+      run_id: 18
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717585707b at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 18 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717585707b
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -471,17 +467,17 @@ sources:
       start_time: 1586814611.5896137
       stop_time: 1586814618.441804
       table_name: results-1-18
-    name: aaaaaaaa-0300-0004-0000-01717585707b
-    parameters: []
+    name: run 18
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175859621:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175859621
-    cache: null
-    catalog: *id001
+      run_id: 19
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175859621 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 19 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175859621
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -497,17 +493,17 @@ sources:
       start_time: 1586814621.228032
       stop_time: 1586814625.0649052
       table_name: results-1-19
-    name: aaaaaaaa-0300-0004-0000-017175859621
-    parameters: []
+    name: run 19
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717585bd36:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717585bd36
-    cache: null
-    catalog: *id001
+      run_id: 20
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717585bd36 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 20 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717585bd36
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -523,17 +519,17 @@ sources:
       start_time: 1586814631.2334013
       stop_time: 1586814642.1574776
       table_name: results-1-20
-    name: aaaaaaaa-0300-0004-0000-01717585bd36
-    parameters: []
+    name: run 20
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175892d32:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175892d32
-    cache: null
-    catalog: *id001
+      run_id: 21
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175892d32 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 21 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175892d32
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -549,17 +545,17 @@ sources:
       start_time: 1586814856.507944
       stop_time: 1586814868.3193502
       table_name: results-1-21
-    name: aaaaaaaa-0300-0004-0000-017175892d32
-    parameters: []
+    name: run 21
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171758b8e38:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171758b8e38
-    cache: null
-    catalog: *id001
+      run_id: 22
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171758b8e38 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 22 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171758b8e38
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -575,17 +571,17 @@ sources:
       start_time: 1586815012.4227817
       stop_time: 1586815023.1543033
       table_name: results-1-22
-    name: aaaaaaaa-0300-0004-0000-0171758b8e38
-    parameters: []
+    name: run 22
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171758bd920:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171758bd920
-    cache: null
-    catalog: *id001
+      run_id: 23
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171758bd920 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 23 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171758bd920
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -601,17 +597,17 @@ sources:
       start_time: 1586815031.5948439
       stop_time: 1586815042.8845785
       table_name: results-1-23
-    name: aaaaaaaa-0300-0004-0000-0171758bd920
-    parameters: []
+    name: run 23
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171758c65b2:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171758c65b2
-    cache: null
-    catalog: *id001
+      run_id: 24
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171758c65b2 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 24 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171758c65b2
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -627,17 +623,17 @@ sources:
       start_time: 1586815067.5798135
       stop_time: 1586815080.2573073
       table_name: results-1-24
-    name: aaaaaaaa-0300-0004-0000-0171758c65b2
-    parameters: []
+    name: run 24
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171758d9a64:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171758d9a64
-    cache: null
-    catalog: *id001
+      run_id: 25
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171758d9a64 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 25 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171758d9a64
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -653,17 +649,17 @@ sources:
       start_time: 1586815146.605899
       stop_time: 1586815157.3310702
       table_name: results-1-25
-    name: aaaaaaaa-0300-0004-0000-0171758d9a64
-    parameters: []
+    name: run 25
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171758e0349:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171758e0349
-    cache: null
-    catalog: *id001
+      run_id: 26
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171758e0349 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 26 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171758e0349
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -679,17 +675,17 @@ sources:
       start_time: 1586815173.4602594
       stop_time: 1586815208.794526
       table_name: results-1-26
-    name: aaaaaaaa-0300-0004-0000-0171758e0349
-    parameters: []
+    name: run 26
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171758eaf89:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171758eaf89
-    cache: null
-    catalog: *id001
+      run_id: 27
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171758eaf89 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 27 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171758eaf89
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -705,17 +701,17 @@ sources:
       start_time: 1586815217.556377
       stop_time: 1586815252.1998446
       table_name: results-1-27
-    name: aaaaaaaa-0300-0004-0000-0171758eaf89
-    parameters: []
+    name: run 27
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171758ff30a:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171758ff30a
-    cache: null
-    catalog: *id001
+      run_id: 28
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171758ff30a at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 28 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171758ff30a
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -731,17 +727,17 @@ sources:
       start_time: 1586815300.372546
       stop_time: 1586815311.6858108
       table_name: results-1-28
-    name: aaaaaaaa-0300-0004-0000-0171758ff30a
-    parameters: []
+    name: run 28
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171759057c1:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171759057c1
-    cache: null
-    catalog: *id001
+      run_id: 29
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171759057c1 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 29 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171759057c1
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -757,17 +753,17 @@ sources:
       start_time: 1586815326.1564248
       stop_time: 1586815341.6740892
       table_name: results-1-29
-    name: aaaaaaaa-0300-0004-0000-0171759057c1
-    parameters: []
+    name: run 29
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175917ce0:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175917ce0
-    cache: null
-    catalog: *id001
+      run_id: 30
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175917ce0 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 30 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175917ce0
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -783,17 +779,17 @@ sources:
       start_time: 1586815401.1945004
       stop_time: 1586815412.7176912
       table_name: results-1-30
-    name: aaaaaaaa-0300-0004-0000-017175917ce0
-    parameters: []
+    name: run 30
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717592a984:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717592a984
-    cache: null
-    catalog: *id001
+      run_id: 31
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717592a984 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 31 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717592a984
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -809,17 +805,17 @@ sources:
       start_time: 1586815478.1576436
       stop_time: 1586815530.0822966
       table_name: results-1-31
-    name: aaaaaaaa-0300-0004-0000-01717592a984
-    parameters: []
+    name: run 31
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717593e682:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717593e682
-    cache: null
-    catalog: *id001
+      run_id: 32
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717593e682 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 32 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717593e682
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -835,17 +831,17 @@ sources:
       start_time: 1586815559.3091033
       stop_time: 1586815585.39517
       table_name: results-1-32
-    name: aaaaaaaa-0300-0004-0000-01717593e682
-    parameters: []
+    name: run 32
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717594f269:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717594f269
-    cache: null
-    catalog: *id001
+      run_id: 33
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717594f269 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 33 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717594f269
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -861,17 +857,17 @@ sources:
       start_time: 1586815627.892739
       stop_time: 1586815657.2476876
       table_name: results-1-33
-    name: aaaaaaaa-0300-0004-0000-01717594f269
-    parameters: []
+    name: run 33
+    parameters: {}
   aaaaaaaa-0300-0004-0000-01717596354a:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-01717596354a
-    cache: null
-    catalog: *id001
+      run_id: 34
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-01717596354a at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 34 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-01717596354a
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -887,17 +883,17 @@ sources:
       start_time: 1586815710.549249
       stop_time: 1586815737.0506594
       table_name: results-1-34
-    name: aaaaaaaa-0300-0004-0000-01717596354a
-    parameters: []
+    name: run 34
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175973734:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175973734
-    cache: null
-    catalog: *id001
+      run_id: 35
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175973734 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 35 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175973734
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -913,17 +909,17 @@ sources:
       start_time: 1586815776.572562
       stop_time: 1586815788.4039123
       table_name: results-1-35
-    name: aaaaaaaa-0300-0004-0000-017175973734
-    parameters: []
+    name: run 35
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171759786a5:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171759786a5
-    cache: null
-    catalog: *id001
+      run_id: 36
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171759786a5 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 36 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171759786a5
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -939,17 +935,17 @@ sources:
       start_time: 1586815796.912295
       stop_time: 1586815917.0711768
       table_name: results-1-36
-    name: aaaaaaaa-0300-0004-0000-0171759786a5
-    parameters: []
+    name: run 36
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171759a0b12:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171759a0b12
-    cache: null
-    catalog: *id001
+      run_id: 37
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171759a0b12 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 37 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171759a0b12
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -965,17 +961,17 @@ sources:
       start_time: 1586815961.8849564
       stop_time: 1586815992.0083015
       table_name: results-1-37
-    name: aaaaaaaa-0300-0004-0000-0171759a0b12
-    parameters: []
+    name: run 37
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171759b24fb:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171759b24fb
-    cache: null
-    catalog: *id001
+      run_id: 38
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171759b24fb at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 38 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171759b24fb
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -991,17 +987,17 @@ sources:
       start_time: 1586816034.0558527
       stop_time: 1586816045.8629627
       table_name: results-1-38
-    name: aaaaaaaa-0300-0004-0000-0171759b24fb
-    parameters: []
+    name: run 38
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171759b7981:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171759b7981
-    cache: null
-    catalog: *id001
+      run_id: 39
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171759b7981 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 39 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171759b7981
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1017,17 +1013,17 @@ sources:
       start_time: 1586816055.693498
       stop_time: 1586816078.7483776
       table_name: results-1-39
-    name: aaaaaaaa-0300-0004-0000-0171759b7981
-    parameters: []
+    name: run 39
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171759cb8e2:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171759cb8e2
-    cache: null
-    catalog: *id001
+      run_id: 40
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171759cb8e2 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 40 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171759cb8e2
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1043,17 +1039,17 @@ sources:
       start_time: 1586816137.4525323
       stop_time: 1586816148.2474098
       table_name: results-1-40
-    name: aaaaaaaa-0300-0004-0000-0171759cb8e2
-    parameters: []
+    name: run 40
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171759d0086:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171759d0086
-    cache: null
-    catalog: *id001
+      run_id: 41
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171759d0086 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 41 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171759d0086
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1069,17 +1065,17 @@ sources:
       start_time: 1586816155.7935836
       stop_time: 1586816173.4925785
       table_name: results-1-41
-    name: aaaaaaaa-0300-0004-0000-0171759d0086
-    parameters: []
+    name: run 41
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171759e56a6:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171759e56a6
-    cache: null
-    catalog: *id001
+      run_id: 42
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171759e56a6 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 42 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171759e56a6
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1095,17 +1091,17 @@ sources:
       start_time: 1586816243.3770373
       stop_time: 1586816260.653846
       table_name: results-1-42
-    name: aaaaaaaa-0300-0004-0000-0171759e56a6
-    parameters: []
+    name: run 42
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171759f136f:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171759f136f
-    cache: null
-    catalog: *id001
+      run_id: 43
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171759f136f at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 43 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171759f136f
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1121,17 +1117,17 @@ sources:
       start_time: 1586816291.7073045
       stop_time: 1586816329.752856
       table_name: results-1-43
-    name: aaaaaaaa-0300-0004-0000-0171759f136f
-    parameters: []
+    name: run 43
+    parameters: {}
   aaaaaaaa-0300-0004-0000-0171759fd207:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-0171759fd207
-    cache: null
-    catalog: *id001
+      run_id: 44
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-0171759fd207 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 44 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-0171759fd207
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1147,17 +1143,17 @@ sources:
       start_time: 1586816340.499465
       stop_time: 1586816351.6178925
       table_name: results-1-44
-    name: aaaaaaaa-0300-0004-0000-0171759fd207
-    parameters: []
+    name: run 44
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175a014b3:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175a014b3
-    cache: null
-    catalog: *id001
+      run_id: 45
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175a014b3 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 45 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175a014b3
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1173,17 +1169,17 @@ sources:
       start_time: 1586816357.5667129
       stop_time: 1586816477.6955404
       table_name: results-1-45
-    name: aaaaaaaa-0300-0004-0000-017175a014b3
-    parameters: []
+    name: run 45
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175a25991:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175a25991
-    cache: null
-    catalog: *id001
+      run_id: 46
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175a25991 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 46 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175a25991
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1199,17 +1195,17 @@ sources:
       start_time: 1586816506.2683697
       stop_time: 1586816544.5148644
       table_name: results-1-46
-    name: aaaaaaaa-0300-0004-0000-017175a25991
-    parameters: []
+    name: run 46
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175a35852:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175a35852
-    cache: null
-    catalog: *id001
+      run_id: 47
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175a35852 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 47 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175a35852
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1225,17 +1221,17 @@ sources:
       start_time: 1586816571.485318
       stop_time: 1586816607.1403327
       table_name: results-1-47
-    name: aaaaaaaa-0300-0004-0000-017175a35852
-    parameters: []
+    name: run 47
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175a40d82:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175a40d82
-    cache: null
-    catalog: *id001
+      run_id: 48
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175a40d82 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 48 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175a40d82
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1251,17 +1247,17 @@ sources:
       start_time: 1586816617.8710608
       stop_time: 1586816627.1284866
       table_name: results-1-48
-    name: aaaaaaaa-0300-0004-0000-017175a40d82
-    parameters: []
+    name: run 48
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175a43b11:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175a43b11
-    cache: null
-    catalog: *id001
+      run_id: 49
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175a43b11 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 49 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175a43b11
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1277,17 +1273,17 @@ sources:
       start_time: 1586816629.5318334
       stop_time: 1586816632.9034646
       table_name: results-1-49
-    name: aaaaaaaa-0300-0004-0000-017175a43b11
-    parameters: []
+    name: run 49
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175a45bd5:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175a45bd5
-    cache: null
-    catalog: *id001
+      run_id: 50
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175a45bd5 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 50 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175a45bd5
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1303,17 +1299,17 @@ sources:
       start_time: 1586816637.920516
       stop_time: 1586816647.9764879
       table_name: results-1-50
-    name: aaaaaaaa-0300-0004-0000-017175a45bd5
-    parameters: []
+    name: run 50
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175a49f05:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175a49f05
-    cache: null
-    catalog: *id001
+      run_id: 51
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175a49f05 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 51 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175a49f05
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1329,17 +1325,17 @@ sources:
       start_time: 1586816655.1200552
       stop_time: 1586816721.0499792
       table_name: results-1-51
-    name: aaaaaaaa-0300-0004-0000-017175a49f05
-    parameters: []
+    name: run 51
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175a7ac43:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175a7ac43
-    cache: null
-    catalog: *id001
+      run_id: 52
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175a7ac43 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 52 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175a7ac43
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1355,17 +1351,17 @@ sources:
       start_time: 1586816855.1205893
       stop_time: 1586816876.8716774
       table_name: results-1-52
-    name: aaaaaaaa-0300-0004-0000-017175a7ac43
-    parameters: []
+    name: run 52
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175a83b47:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175a83b47
-    cache: null
-    catalog: *id001
+      run_id: 53
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175a83b47 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 53 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175a83b47
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1381,17 +1377,17 @@ sources:
       start_time: 1586816891.730184
       stop_time: 1586816915.5455408
       table_name: results-1-53
-    name: aaaaaaaa-0300-0004-0000-017175a83b47
-    parameters: []
+    name: run 53
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175a8986d:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175a8986d
-    cache: null
-    catalog: *id001
+      run_id: 54
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175a8986d at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 54 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175a8986d
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1407,17 +1403,17 @@ sources:
       start_time: 1586816915.5751896
       stop_time: 1586816975.861367
       table_name: results-1-54
-    name: aaaaaaaa-0300-0004-0000-017175a8986d
-    parameters: []
+    name: run 54
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175a98409:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175a98409
-    cache: null
-    catalog: *id001
+      run_id: 55
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175a98409 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 55 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175a98409
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1433,17 +1429,17 @@ sources:
       start_time: 1586816975.8910522
       stop_time: 1586817012.4034793
       table_name: results-1-55
-    name: aaaaaaaa-0300-0004-0000-017175a98409
-    parameters: []
+    name: run 55
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175aa12c7:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175aa12c7
-    cache: null
-    catalog: *id001
+      run_id: 56
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175aa12c7 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 56 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175aa12c7
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1459,17 +1455,17 @@ sources:
       start_time: 1586817012.4333904
       stop_time: 1586817072.6432846
       table_name: results-1-56
-    name: aaaaaaaa-0300-0004-0000-017175aa12c7
-    parameters: []
+    name: run 56
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175aba952:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175aba952
-    cache: null
-    catalog: *id001
+      run_id: 57
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175aba952 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 57 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175aba952
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1485,17 +1481,17 @@ sources:
       start_time: 1586817116.5094452
       stop_time: 1586817133.712833
       table_name: results-1-57
-    name: aaaaaaaa-0300-0004-0000-017175aba952
-    parameters: []
+    name: run 57
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175abeca5:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175abeca5
-    cache: null
-    catalog: *id001
+      run_id: 58
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175abeca5 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 58 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175abeca5
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1511,17 +1507,17 @@ sources:
       start_time: 1586817133.7425115
       stop_time: 1586817193.8527796
       table_name: results-1-58
-    name: aaaaaaaa-0300-0004-0000-017175abeca5
-    parameters: []
+    name: run 58
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175acd791:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175acd791
-    cache: null
-    catalog: *id001
+      run_id: 59
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175acd791 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 59 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175acd791
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1537,17 +1533,17 @@ sources:
       start_time: 1586817193.893011
       stop_time: 1586817229.3097045
       table_name: results-1-59
-    name: aaaaaaaa-0300-0004-0000-017175acd791
-    parameters: []
+    name: run 59
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175ad6212:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175ad6212
-    cache: null
-    catalog: *id001
+      run_id: 60
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175ad6212 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 60 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175ad6212
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1563,17 +1559,17 @@ sources:
       start_time: 1586817229.349876
       stop_time: 1586817289.6021028
       table_name: results-1-60
-    name: aaaaaaaa-0300-0004-0000-017175ad6212
-    parameters: []
+    name: run 60
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175aec21b:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175aec21b
-    cache: null
-    catalog: *id001
+      run_id: 61
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175aec21b at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 61 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175aec21b
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1589,17 +1585,17 @@ sources:
       start_time: 1586817319.4629998
       stop_time: 1586817339.4461627
       table_name: results-1-61
-    name: aaaaaaaa-0300-0004-0000-017175aec21b
-    parameters: []
+    name: run 61
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175af104a:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175af104a
-    cache: null
-    catalog: *id001
+      run_id: 62
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175af104a at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 62 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175af104a
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1615,17 +1611,17 @@ sources:
       start_time: 1586817339.4781296
       stop_time: 1586817399.5933669
       table_name: results-1-62
-    name: aaaaaaaa-0300-0004-0000-017175af104a
-    parameters: []
+    name: run 62
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175affb3d:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175affb3d
-    cache: null
-    catalog: *id001
+      run_id: 63
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175affb3d at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 63 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175affb3d
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1641,17 +1637,17 @@ sources:
       start_time: 1586817399.6230671
       stop_time: 1586817437.7875967
       table_name: results-1-63
-    name: aaaaaaaa-0300-0004-0000-017175affb3d
-    parameters: []
+    name: run 63
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b0906f:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b0906f
-    cache: null
-    catalog: *id001
+      run_id: 64
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b0906f at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 64 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b0906f
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1667,17 +1663,17 @@ sources:
       start_time: 1586817437.8275435
       stop_time: 1586817498.001853
       table_name: results-1-64
-    name: aaaaaaaa-0300-0004-0000-017175b0906f
-    parameters: []
+    name: run 64
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b1ecbb:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b1ecbb
-    cache: null
-    catalog: *id001
+      run_id: 65
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b1ecbb at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 65 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b1ecbb
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1693,17 +1689,17 @@ sources:
       start_time: 1586817526.9825358
       stop_time: 1586817545.970926
       table_name: results-1-65
-    name: aaaaaaaa-0300-0004-0000-017175b1ecbb
-    parameters: []
+    name: run 65
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b23707:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b23707
-    cache: null
-    catalog: *id001
+      run_id: 66
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b23707 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 66 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b23707
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1719,17 +1715,17 @@ sources:
       start_time: 1586817546.010605
       stop_time: 1586817606.166383
       table_name: results-1-66
-    name: aaaaaaaa-0300-0004-0000-017175b23707
-    parameters: []
+    name: run 66
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b3222a:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b3222a
-    cache: null
-    catalog: *id001
+      run_id: 67
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b3222a at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 67 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b3222a
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1745,17 +1741,17 @@ sources:
       start_time: 1586817606.19641
       stop_time: 1586817642.6213996
       table_name: results-1-67
-    name: aaaaaaaa-0300-0004-0000-017175b3222a
-    parameters: []
+    name: run 67
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b3b091:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b3b091
-    cache: null
-    catalog: *id001
+      run_id: 68
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b3b091 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 68 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b3b091
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1771,17 +1767,17 @@ sources:
       start_time: 1586817642.6513257
       stop_time: 1586817702.8584602
       table_name: results-1-68
-    name: aaaaaaaa-0300-0004-0000-017175b3b091
-    parameters: []
+    name: run 68
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b54ec8:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b54ec8
-    cache: null
-    catalog: *id001
+      run_id: 69
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b54ec8 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 69 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b54ec8
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1797,17 +1793,17 @@ sources:
       start_time: 1586817748.6919916
       stop_time: 1586817766.063576
       table_name: results-1-69
-    name: aaaaaaaa-0300-0004-0000-017175b54ec8
-    parameters: []
+    name: run 69
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b592c3:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b592c3
-    cache: null
-    catalog: *id001
+      run_id: 70
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b592c3 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 70 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b592c3
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1823,17 +1819,17 @@ sources:
       start_time: 1586817766.1035044
       stop_time: 1586817826.2093575
       table_name: results-1-70
-    name: aaaaaaaa-0300-0004-0000-017175b592c3
-    parameters: []
+    name: run 70
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b67db5:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b67db5
-    cache: null
-    catalog: *id001
+      run_id: 71
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b67db5 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 71 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b67db5
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1849,17 +1845,17 @@ sources:
       start_time: 1586817826.2489996
       stop_time: 1586817860.7908893
       table_name: results-1-71
-    name: aaaaaaaa-0300-0004-0000-017175b67db5
-    parameters: []
+    name: run 71
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b704cb:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b704cb
-    cache: null
-    catalog: *id001
+      run_id: 72
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b704cb at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 72 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b704cb
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1875,17 +1871,17 @@ sources:
       start_time: 1586817860.8308718
       stop_time: 1586817921.0148232
       table_name: results-1-72
-    name: aaaaaaaa-0300-0004-0000-017175b704cb
-    parameters: []
+    name: run 72
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b89b69:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b89b69
-    cache: null
-    catalog: *id001
+      run_id: 73
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b89b69 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 73 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b89b69
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1901,17 +1897,17 @@ sources:
       start_time: 1586817964.917619
       stop_time: 1586817981.780425
       table_name: results-1-73
-    name: aaaaaaaa-0300-0004-0000-017175b89b69
-    parameters: []
+    name: run 73
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b8dd68:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b8dd68
-    cache: null
-    catalog: *id001
+      run_id: 74
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b8dd68 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 74 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b8dd68
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1927,17 +1923,17 @@ sources:
       start_time: 1586817981.820144
       stop_time: 1586818042.031588
       table_name: results-1-74
-    name: aaaaaaaa-0300-0004-0000-017175b8dd68
-    parameters: []
+    name: run 74
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175b9c8c4:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175b9c8c4
-    cache: null
-    catalog: *id001
+      run_id: 75
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175b9c8c4 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 75 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175b9c8c4
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1953,17 +1949,17 @@ sources:
       start_time: 1586818042.0615883
       stop_time: 1586818077.7020962
       table_name: results-1-75
-    name: aaaaaaaa-0300-0004-0000-017175b9c8c4
-    parameters: []
+    name: run 75
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175ba541a:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175ba541a
-    cache: null
-    catalog: *id001
+      run_id: 76
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175ba541a at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 76 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175ba541a
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -1979,17 +1975,17 @@ sources:
       start_time: 1586818077.7420447
       stop_time: 1586818137.944297
       table_name: results-1-76
-    name: aaaaaaaa-0300-0004-0000-017175ba541a
-    parameters: []
+    name: run 76
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175bb8ce6:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175bb8ce6
-    cache: null
-    catalog: *id001
+      run_id: 77
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175bb8ce6 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 77 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175bb8ce6
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2005,17 +2001,17 @@ sources:
       start_time: 1586818157.8090956
       stop_time: 1586818174.7923732
       table_name: results-1-77
-    name: aaaaaaaa-0300-0004-0000-017175bb8ce6
-    parameters: []
+    name: run 77
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175bbcf5c:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175bbcf5c
-    cache: null
-    catalog: *id001
+      run_id: 78
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175bbcf5c at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 78 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175bbcf5c
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2031,17 +2027,17 @@ sources:
       start_time: 1586818174.8322997
       stop_time: 1586818234.992291
       table_name: results-1-78
-    name: aaaaaaaa-0300-0004-0000-017175bbcf5c
-    parameters: []
+    name: run 78
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175bcba84:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175bcba84
-    cache: null
-    catalog: *id001
+      run_id: 79
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175bcba84 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 79 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175bcba84
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2057,17 +2053,17 @@ sources:
       start_time: 1586818235.022323
       stop_time: 1586818270.1209977
       table_name: results-1-79
-    name: aaaaaaaa-0300-0004-0000-017175bcba84
-    parameters: []
+    name: run 79
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175bd43bd:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175bd43bd
-    cache: null
-    catalog: *id001
+      run_id: 80
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175bd43bd at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 80 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175bd43bd
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2083,17 +2079,17 @@ sources:
       start_time: 1586818270.1609416
       stop_time: 1586818330.2396803
       table_name: results-1-80
-    name: aaaaaaaa-0300-0004-0000-017175bd43bd
-    parameters: []
+    name: run 80
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175beb6ef:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175beb6ef
-    cache: null
-    catalog: *id001
+      run_id: 81
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175beb6ef at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 81 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175beb6ef
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2109,17 +2105,17 @@ sources:
       start_time: 1586818365.178434
       stop_time: 1586818383.2251177
       table_name: results-1-81
-    name: aaaaaaaa-0300-0004-0000-017175beb6ef
-    parameters: []
+    name: run 81
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175befd8d:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175befd8d
-    cache: null
-    catalog: *id001
+      run_id: 82
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175befd8d at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 82 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175befd8d
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2135,17 +2131,17 @@ sources:
       start_time: 1586818383.2615042
       stop_time: 1586818443.583031
       table_name: results-1-82
-    name: aaaaaaaa-0300-0004-0000-017175befd8d
-    parameters: []
+    name: run 82
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175bfe949:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175bfe949
-    cache: null
-    catalog: *id001
+      run_id: 83
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175bfe949 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 83 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175bfe949
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2161,17 +2157,17 @@ sources:
       start_time: 1586818443.612865
       stop_time: 1586818480.0747774
       table_name: results-1-83
-    name: aaaaaaaa-0300-0004-0000-017175bfe949
-    parameters: []
+    name: run 83
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175c077de:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175c077de
-    cache: null
-    catalog: *id001
+      run_id: 84
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175c077de at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 84 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175c077de
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2187,17 +2183,17 @@ sources:
       start_time: 1586818480.1047213
       stop_time: 1586818540.3024633
       table_name: results-1-84
-    name: aaaaaaaa-0300-0004-0000-017175c077de
-    parameters: []
+    name: run 84
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175cc46ce:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175cc46ce
-    cache: null
-    catalog: *id001
+      run_id: 85
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175cc46ce at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 85 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175cc46ce
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2213,17 +2209,17 @@ sources:
       start_time: 1586819253.9778347
       stop_time: 1586819272.6578097
       table_name: results-2-1
-    name: aaaaaaaa-0300-0004-0000-017175cc46ce
-    parameters: []
+    name: run 85
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175cc8fe5:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175cc8fe5
-    cache: null
-    catalog: *id001
+      run_id: 86
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175cc8fe5 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 86 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175cc8fe5
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2239,17 +2235,17 @@ sources:
       start_time: 1586819272.697756
       stop_time: 1586819333.0301218
       table_name: results-2-2
-    name: aaaaaaaa-0300-0004-0000-017175cc8fe5
-    parameters: []
+    name: run 86
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175cd7bba:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175cd7bba
-    cache: null
-    catalog: *id001
+      run_id: 87
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175cd7bba at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 87 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175cd7bba
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2265,17 +2261,17 @@ sources:
       start_time: 1586819333.0700445
       stop_time: 1586819368.0198498
       table_name: results-2-3
-    name: aaaaaaaa-0300-0004-0000-017175cd7bba
-    parameters: []
+    name: run 87
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175ce0468:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175ce0468
-    cache: null
-    catalog: *id001
+      run_id: 88
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175ce0468 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 88 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175ce0468
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2291,17 +2287,17 @@ sources:
       start_time: 1586819368.0595329
       stop_time: 1586819428.2445455
       table_name: results-2-4
-    name: aaaaaaaa-0300-0004-0000-017175ce0468
-    parameters: []
+    name: run 88
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d0024c:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d0024c
-    cache: null
-    catalog: *id001
+      run_id: 89
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d0024c at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 89 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d0024c
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2317,17 +2313,17 @@ sources:
       start_time: 1586819498.5843933
       stop_time: 1586819518.5437133
       table_name: results-2-5
-    name: aaaaaaaa-0300-0004-0000-017175d0024c
-    parameters: []
+    name: run 89
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d05063:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d05063
-    cache: null
-    catalog: *id001
+      run_id: 90
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d05063 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 90 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d05063
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2343,17 +2339,17 @@ sources:
       start_time: 1586819518.575193
       stop_time: 1586819578.6477914
       table_name: results-2-6
-    name: aaaaaaaa-0300-0004-0000-017175d05063
-    parameters: []
+    name: run 90
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d13b2b:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d13b2b
-    cache: null
-    catalog: *id001
+      run_id: 91
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d13b2b at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 91 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d13b2b
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2369,17 +2365,17 @@ sources:
       start_time: 1586819578.6874778
       stop_time: 1586819613.71048
       table_name: results-2-7
-    name: aaaaaaaa-0300-0004-0000-017175d13b2b
-    parameters: []
+    name: run 91
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d1c422:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d1c422
-    cache: null
-    catalog: *id001
+      run_id: 92
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d1c422 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 92 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d1c422
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2395,17 +2391,17 @@ sources:
       start_time: 1586819613.7501307
       stop_time: 1586819673.9401584
       table_name: results-2-8
-    name: aaaaaaaa-0300-0004-0000-017175d1c422
-    parameters: []
+    name: run 92
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d328e3:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d328e3
-    cache: null
-    catalog: *id001
+      run_id: 93
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d328e3 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 93 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d328e3
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2421,17 +2417,17 @@ sources:
       start_time: 1586819705.072366
       stop_time: 1586819722.1754444
       table_name: results-2-9
-    name: aaaaaaaa-0300-0004-0000-017175d328e3
-    parameters: []
+    name: run 93
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d36bd3:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d36bd3
-    cache: null
-    catalog: *id001
+      run_id: 94
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d36bd3 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 94 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d36bd3
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2447,17 +2443,17 @@ sources:
       start_time: 1586819722.2153609
       stop_time: 1586819782.3224788
       table_name: results-2-10
-    name: aaaaaaaa-0300-0004-0000-017175d36bd3
-    parameters: []
+    name: run 94
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d456c6:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d456c6
-    cache: null
-    catalog: *id001
+      run_id: 95
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d456c6 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 95 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d456c6
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2473,17 +2469,17 @@ sources:
       start_time: 1586819782.3621554
       stop_time: 1586819817.5089197
       table_name: results-2-11
-    name: aaaaaaaa-0300-0004-0000-017175d456c6
-    parameters: []
+    name: run 95
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d4e039:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d4e039
-    cache: null
-    catalog: *id001
+      run_id: 96
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d4e039 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 96 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d4e039
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2499,17 +2495,17 @@ sources:
       start_time: 1586819817.5488513
       stop_time: 1586819877.8453584
       table_name: results-2-12
-    name: aaaaaaaa-0300-0004-0000-017175d4e039
-    parameters: []
+    name: run 96
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d63945:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d63945
-    cache: null
-    catalog: *id001
+      run_id: 97
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d63945 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 97 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d63945
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2525,17 +2521,17 @@ sources:
       start_time: 1586819905.8745518
       stop_time: 1586819924.745586
       table_name: results-2-13
-    name: aaaaaaaa-0300-0004-0000-017175d63945
-    parameters: []
+    name: run 97
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d6831d:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d6831d
-    cache: null
-    catalog: *id001
+      run_id: 98
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d6831d at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 98 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d6831d
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2551,17 +2547,17 @@ sources:
       start_time: 1586819924.785512
       stop_time: 1586819984.984053
       table_name: results-2-14
-    name: aaaaaaaa-0300-0004-0000-017175d6831d
-    parameters: []
+    name: run 98
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d76e6c:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d76e6c
-    cache: null
-    catalog: *id001
+      run_id: 99
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d76e6c at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 99 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d76e6c
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2577,17 +2573,17 @@ sources:
       start_time: 1586819985.0240855
       stop_time: 1586820019.2981126
       table_name: results-2-15
-    name: aaaaaaaa-0300-0004-0000-017175d76e6c
-    parameters: []
+    name: run 99
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d7f476:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d7f476
-    cache: null
-    catalog: *id001
+      run_id: 100
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d7f476 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 100 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d7f476
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2603,17 +2599,17 @@ sources:
       start_time: 1586820019.3378325
       stop_time: 1586820079.6342049
       table_name: results-2-16
-    name: aaaaaaaa-0300-0004-0000-017175d7f476
-    parameters: []
+    name: run 100
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d94d73:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d94d73
-    cache: null
-    catalog: *id001
+      run_id: 101
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d94d73 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 101 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d94d73
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2629,17 +2625,17 @@ sources:
       start_time: 1586820107.6483529
       stop_time: 1586820125.4674866
       table_name: results-2-17
-    name: aaaaaaaa-0300-0004-0000-017175d94d73
-    parameters: []
+    name: run 101
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175d9932f:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175d9932f
-    cache: null
-    catalog: *id001
+      run_id: 102
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175d9932f at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 102 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175d9932f
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2655,17 +2651,17 @@ sources:
       start_time: 1586820125.5074382
       stop_time: 1586820185.647376
       table_name: results-2-18
-    name: aaaaaaaa-0300-0004-0000-017175d9932f
-    parameters: []
+    name: run 102
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175da7e43:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175da7e43
-    cache: null
-    catalog: *id001
+      run_id: 103
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175da7e43 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 103 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175da7e43
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2681,17 +2677,17 @@ sources:
       start_time: 1586820185.6872983
       stop_time: 1586820220.164892
       table_name: results-2-19
-    name: aaaaaaaa-0300-0004-0000-017175da7e43
-    parameters: []
+    name: run 103
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175db0519:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175db0519
-    cache: null
-    catalog: *id001
+      run_id: 104
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175db0519 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 104 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175db0519
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2707,17 +2703,17 @@ sources:
       start_time: 1586820220.20455
       stop_time: 1586820280.39998
       table_name: results-2-20
-    name: aaaaaaaa-0300-0004-0000-017175db0519
-    parameters: []
+    name: run 104
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175dc35eb:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175dc35eb
-    cache: null
-    catalog: *id001
+      run_id: 105
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175dc35eb at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 105 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175dc35eb
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2733,17 +2729,17 @@ sources:
       start_time: 1586820298.231182
       stop_time: 1586820315.7186403
       table_name: results-2-21
-    name: aaaaaaaa-0300-0004-0000-017175dc35eb
-    parameters: []
+    name: run 105
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175dc7a5a:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175dc7a5a
-    cache: null
-    catalog: *id001
+      run_id: 106
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175dc7a5a at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 106 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175dc7a5a
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2759,17 +2755,17 @@ sources:
       start_time: 1586820315.7483253
       stop_time: 1586820375.8332272
       table_name: results-2-22
-    name: aaaaaaaa-0300-0004-0000-017175dc7a5a
-    parameters: []
+    name: run 106
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175dd652d:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175dd652d
-    cache: null
-    catalog: *id001
+      run_id: 107
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175dd652d at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 107 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175dd652d
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2785,17 +2781,17 @@ sources:
       start_time: 1586820375.8632557
       stop_time: 1586820411.3143198
       table_name: results-2-23
-    name: aaaaaaaa-0300-0004-0000-017175dd652d
-    parameters: []
+    name: run 107
+    parameters: {}
   aaaaaaaa-0300-0004-0000-017175ddefc6:
     args:
       db_path: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
       guid: aaaaaaaa-0300-0004-0000-017175ddefc6
-    cache: null
-    catalog: *id001
+      run_id: 108
+    cache: []
     catalog_dir: C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
-    description: run aaaaaaaa-0300-0004-0000-017175ddefc6 at C:\Users\Nik\OneDrive
-      - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+    description: run 108 at C:\Users\Nik\OneDrive - Microsoft\Repos\intake-qcodes\data\qcodes_data.db
+      with guid aaaaaaaa-0300-0004-0000-017175ddefc6
     direct_access: forbid
     driver: intake_qcodes.sources.QCodesDataFrame
     getenv: false
@@ -2811,5 +2807,5 @@ sources:
       start_time: 1586820411.3542428
       stop_time: 1586820471.5996563
       table_name: results-2-24
-    name: aaaaaaaa-0300-0004-0000-017175ddefc6
-    parameters: []
+    name: run 108
+    parameters: {}
