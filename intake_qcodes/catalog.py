@@ -199,14 +199,8 @@ class QCodesCatalog(Catalog):
 
     @property
     def samples(self):
-        if self._samples:
-            return self._samples
-
-        raise ValueError('Catalog not initilized. No sample information loaded')
+        return self._samples
 
     @property
     def experiments(self):
-        if self._experiments:
-            return self._experiments
-
-        raise ValueError('Catalog not initilized. No experiment information loaded')
+        return self._experiments
