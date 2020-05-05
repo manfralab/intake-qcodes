@@ -17,7 +17,7 @@ setup(
     install_requires=[
         'qcodes',
         'intake',
-        'hvplot=0.5.2',
+        'hvplot==0.5.2',
         'bokeh==1.4.0',
         'qcodes>=0.12',
     ]
