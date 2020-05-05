@@ -19,7 +19,7 @@ setup(
         'xarray',
         'pandas',
         'intake',
-        'panel>=0.8.0',
+        'panel==0.8.0',
         'hvplot==0.5.2',
         'bokeh==1.4.0',
         'qcodes>=0.12',
