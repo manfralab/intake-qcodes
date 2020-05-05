@@ -197,17 +197,12 @@ def datadict_to_xarray(datadict: dict) -> Dataset:
     convert dictionary of numpy arrays to xarray
     """
 
-    data_arrays = []
-    for param, sub_dict in datadict.items():
-        x = DataArray(
-            data=sub_dict[param],
-            name=param,
-            coords=[vals for key, vals in sub_dict.items() if key!=param],
-            dims=[key for key in sub_dict if key!=param]
-        )
-        data_arrays.append(x)
+    # TODO: do this without first creating a dataframe?
+    # it isn't trivial to handle cases where the data is not on a regular grid
+    # the pandas -> xarray flow handles this really nicely
 
-    return xr.merge(data_arrays)
+    df = datadict_to_dataframe(datadict)
+    return Dataset.from_dataframe(df, sparse=False)
 
 
 def dataframe_to_xarray(df: DataFrame) -> Dataset:

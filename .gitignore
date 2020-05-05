@@ -138,5 +138,5 @@ dmypy.json
 cython_debug/
 
 # sql junk
-data/*.db-wal
-data/*.db-shm
+examples/data/*.db-wal
+examples/data/*.db-shm
