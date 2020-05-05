@@ -14,5 +14,11 @@ setup(
     license="MIT",
     packages=find_packages(),
     python_requires=">=3",
-    install_requires=['qcodes']
+    install_requires=[
+        'qcodes',
+        'intake',
+        'hvplot=0.5',
+        'bokeh==1.4.0',
+        'qcodes>=0.12',
+    ]
 )
