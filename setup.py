@@ -16,6 +16,8 @@ setup(
     python_requires=">=3",
     install_requires=[
         'qcodes',
+        'xarray',
+        'pandas',
         'intake',
         'hvplot==0.5.2',
         'bokeh==1.4.0',
