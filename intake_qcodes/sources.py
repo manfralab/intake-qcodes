@@ -102,6 +102,9 @@ class QCodesBase(DataSource):
         """ return qcodes.DataSet """
         return self._dataset
 
+    def as_dict(self):
+        return self._read_data()
+
     @property
     def guid(self):
         if not self._guid:
